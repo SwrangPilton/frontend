@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import cart from './images/cart.jpg'
 import avatar from './images/avatar.png'
@@ -19,10 +19,12 @@ export default function Nav() {
     // }, [isScrollable])
 
     return (
-        <nav className={`flex flex-wrap px-2 lg:px-0 lg:justify-around items-center py-4 shadow-md`}>
-            <ul className="flex-row items-center ">
-                <AiOutlineMenu className="block lg:hidden text-3xl mr-3" onClick={toggleNav} />
-                <h1 className="text-3xl font-bold mr-8">sneakers</h1>
+        <nav className={`flex flex-wrap px-6 lg:px-16 justify-between items-center py-4 shadow-md`}>
+            <ul className="flex flex-wrap flex-row items-center ">
+                <div className="flex flex-wrap flex-row items-end">
+                    <AiOutlineMenu className="block lg:hidden text-2xl lg:text-3xl mr-3" onClick={toggleNav} />
+                    <h1 className="text-2xl lg:text-3xl font-bold mr-8">sneakers</h1>
+                </div>
                 <div className={`hidden lg:block ${navOpen ? ' block ' : ' hidden '}`}>
                     <a href="#!" className="mr-4 hover:text-red-500" onClick={closeNav}>Collections</a>
                     <a href="#!" className="mr-4 hover:text-red-500" onClick={closeNav}>Men</a>
@@ -32,11 +34,9 @@ export default function Nav() {
                 </div>
             </ul>
 
-            <ul className="flex-row items-center justify-end">
-                <a href="#!" className="hover:text-red-500">
-                    <img src={cart} className="w-6 mr-4 " alt="cart" />
-                </a>
-                <img src={avatar} className="cursor-pointer w-2/6 h-1/2 rounded-full" alt="avatar" />
+            <ul className="flex flex-wrap flex-row items-center justify-end">
+                <img src={cart} className="cursor-pointer w-5 lg:w-6 mr-4 " alt="cart" />
+                <img src={avatar} className="cursor-pointer w-1/6 lg:w-2/6 h-1/2 rounded-full" alt="avatar" />
             </ul>
 
             <div className={`absolute lg:hidden bg-white shadow-2xl-red text-black top-0 left-0 h-screen w-3/4 pl-4 
