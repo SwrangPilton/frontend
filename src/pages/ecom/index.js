@@ -66,12 +66,12 @@ function App() {
                     </div>
 
                     <div className="flex flex-wrap justify-between pt-8 items-center">
-                        <div className="w-2/6 lg:w-1/2 py-1 flex flex-wrap flex-row justify-around mr-2 rounded-xl bg-gray-200 shadow-md">
+                        <div className="w-2/6 mb-3 lg:w-1/2 py-1 flex flex-wrap flex-row justify-around mr-2 rounded-xl bg-gray-200 shadow-md">
                             <button className="text-2xl lg:text-4xl font-bold text-red-500" onClick={handleDecrease}>-</button>
                             <h1 className="text-xl lg:text-3xl font-bold">{val}</h1>
                             <button className="text-2xl lg:text-4xl font-bold text-red-500" onClick={handleIncrease}>+</button>
                         </div>
-                        <button className="w-2/6 rounded-xl py-2 bg-blue-600 text-gray-50 text-lg lg:text-2xl filter shadow-xl">Add to cart</button>
+                        <button className="w-2/6 mb-3 rounded-xl py-2 bg-blue-600 text-gray-50 text-lg lg:text-2xl filter shadow-xl">Add to cart</button>
                     </div>
                 </div>
             </div>
