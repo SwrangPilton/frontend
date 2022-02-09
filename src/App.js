@@ -24,7 +24,7 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/frontend">
       <ScrollToTop/>
       <Switch>
         <Route exact path="/" component={Home} />

@@ -47,8 +47,8 @@ function Card({ data }) {
                     <div className="flex flex-col p-6 flex-wrap">
                         <Link to={location} className="text-2xl font-semibold hover:text-red-600 duration-500 capitalize">{title}</Link>
 
-                        <div className="flex-row justify-between my-4">
-                            <div className="flex-row">
+                        <div className="flex flex-wrap flex-row justify-between my-4">
+                            <div className="flex flex-wrap flex-row">
                                 <h1 className="mr-2 text-md xl:text-lg font-bold html">{html}</h1>
                                 <h1 className="mr-2 text-md xl:text-lg font-bold css">{css}</h1>
                                 <h1 className="mr-2 text-md xl:text-lg font-bold js">{js}</h1>

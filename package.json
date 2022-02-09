@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "homepage": "https://swrangpilton.github.io/frontend/",
+  "homepage": "https://swrangpilton.github.io/frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,9 +16,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "craco start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
