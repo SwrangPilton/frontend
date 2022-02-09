@@ -1,0 +1,4 @@
+.bg-profile {
+    background: url('./images/pattern-background-desktop.svg') no-repeat top, hsl(225, 100%, 94%);
+    background-size: contain;
+}

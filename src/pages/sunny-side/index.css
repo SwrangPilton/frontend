@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&display=swap');
+
+#sunny_landing {
+    font-family: 'Barlow',
+    sans-serif !important;
+}
+
+#sunny_landing h1 {
+    font-family: 'Fraunces',
+        serif;
+}
+
+#sunny_landing img {
+    /* max-width: 600px; */
+}

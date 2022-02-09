@@ -1,0 +1,68 @@
+boyd {
+    background-color: #c7c7c7;
+}
+
+.html {
+    color: #57cde7;
+}
+
+.css {
+    color: #8e9dcf;
+}
+
+.js {
+    color: #ec639a;
+}
+
+.intermediate {
+    color: #b48202;
+}
+
+.bg-intermediate {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+
+.newbie--text {
+    color: #33C8CB;
+}
+
+.newbie--bg {
+    background-color: #22a9ac;
+}
+
+.junior--text {
+    color: #9fca31;
+}
+
+.junior--bg {
+    background-color: #9fca31;
+}
+
+.intermediate--text {
+    color: #F1B604;
+}
+
+.intermediate--bg {
+    background-color: #F1B604;
+}
+
+.advanced--text {
+    color: #F48925;
+}
+
+.advanced--bg {
+    background-color: #F48925;
+}
+
+.guru--text {
+    color: #EB5252;
+}
+
+.guru--bg {
+    background-color: #EB5252;
+}
+
+.bg-testimonial {
+    background-color: hsl(210, 46%, 95%);
+}

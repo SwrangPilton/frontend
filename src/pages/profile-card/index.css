@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+#profile-component {
+    font-family: 'Kumbh Sans',
+    sans-serif;
+    background: url('./images/bg-pattern-top.svg') no-repeat,
+    hsl(185, 75%, 39%);
+}
+
+.profile_card {
+    width: 75% ;
+}
+
+@media only screen and (min-width: 600px) {
+    .profile_card {
+        width: 25%;
+    }
+    #profile-component {
+        font-family: 'Kumbh Sans',sans-serif;
+        background: 
+            url('./images/bg-pattern-top.svg') no-repeat,
+            url('./images/bg-pattern-bottom.svg') no-repeat,
+            hsl(185, 75%, 39%);
+        background-position: -30% 300%, 125% -380%;
+    }
+
+}
+
+.profile_border {
+    border-top: 10px !important;
+}

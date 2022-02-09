@@ -1,0 +1,16 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 500ms ease;
+    transform: scale(0.99);
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 500ms ;
+    transform: scale(1);
+}

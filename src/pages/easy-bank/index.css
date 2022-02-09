@@ -1,0 +1,105 @@
+#easy-bank-landing {
+    overflow: hidden !important;
+}
+#easy-bank-landing h1 {
+    @apply text-gray-700;
+}
+
+#easy-bank-landing p {
+    @apply text-gray-500;
+}
+
+.dark-opacity {
+    /* opacity: 0.8; */
+    /* background-color: rgb(79, 79, 79); */
+    /* height: 100vh !important;
+    overflow: hidden !important; */
+}
+
+/* :not(.nav-small) {
+    opacity: 0.8;
+    background-color: rgb(79, 79, 79);
+} */
+
+.bright-opacity {
+    opacity: 1;
+    /* background-color: red !important; */
+}
+
+
+/* //! HEAD  */
+.head_inside h1 {
+    @apply text-2xl xl:text-6xl capitalize text-gray-600;
+}
+.head_inside p {
+    @apply text-xl text-gray-500 my-4 lg:my-8;
+}
+.head-bg {
+    background: url('./images/bg-intro-desktop.svg') no-repeat;
+    background-position: 162% 10%;
+    background-size: 75% 150%;
+}
+@media only screen and (max-width: 768px) {
+    .head-bg {
+        background: transparent;
+    }
+    .head-bg-small {
+        background: url('./images/bg-intro-mobile.svg') no-repeat;
+        background-position: 162% 10%;
+        background-size: 75% 150%;
+    }
+}
+
+
+/* .features h1 {
+    @apply text-4xl lg:text-5xl mb-6 text-gray-600;
+}
+
+.features p {
+    @apply text-xl lg:w-1/2 text-gray-500;
+} */
+
+/* //! FEATURES  */
+.features .features_inside h1 {
+    @apply text-2xl xl:text-3xl capitalize my-4 lg:my-8 text-gray-600;
+}
+
+.features .features_inside p {
+    @apply text-lg ;
+}
+
+.features .features_inside img {
+    @apply mx-auto lg:mx-0;
+}
+
+/* //! ARTICLES  */
+.articles_inside {
+    @apply mt-7 lg:mt-14 shadow-xl rounded-xl;
+}
+.articles_inside img {
+    height: 200px;
+    width: 100%;
+    @apply rounded-t-xl;
+}
+
+.articles_inside h1 {
+    @apply text-xl xl:text-xl capitalize my-2 lg:my-4 text-gray-600 tracking-tight;
+}
+
+.articles_inside .article_author {
+    @apply text-sm;
+}
+
+
+/* //! FOOTER  */
+#easy-bank-landing footer {
+    background: hsl(233, 26%, 24%) ;
+}
+
+footer a {
+    @apply text-gray-300 hover:text-gray-200 text-xl mb-3;
+}
+
+footer p {
+    @apply text-white !important;
+}

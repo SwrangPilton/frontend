@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&family=Montserrat&display=swap');
+
+.insurance-landing {
+    font-family: 'Karla', sans-serif;
+}
+
+.body-fixed {
+    height: 100vh !important;
+    overflow-y: hidden !important;
+}
+
+.insurance-landing h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .mx-center {
+        margin: 0 auto;
+    }
+    .bg-intro {
+        background: 
+        url('./bg-intro-right.svg') no-repeat right top,
+        hsl(256, 26%, 20%) !important;
+    }
+    .bg-about {
+        background: hsl(256, 26%, 20%) url('./bg-about-pc.svg') no-repeat 120px 10px !important;
+        background-position: bottom;
+    }
+
+}
+
+.violet-bg {
+    background-color: hsl(256, 26%, 20%);
+}
+
+.grey-bg {
+    background-color: hsl(270, 9%, 17%);
+}
+
+.bg-mobile-nav {
+    background: hsl(270, 9%, 17%) url('./mobile-nav.svg') no-repeat;
+    background-position:right bottom;
+}
+
+.bg-about {
+    background: hsl(256, 26%, 20%) url('./bg-about-pc.svg') no-repeat;
+    background-position: right;
+}
+
+.bg-about-outer {
+    background: url('./footer.svg') no-repeat;
+}
+
+.bg-intro {
+    background: 
+    url('./bg-intro-left-pc.svg') no-repeat left bottom,
+    url('./bg-intro-right-pc.svg') no-repeat right top,
+    hsl(256, 26%, 20%);
+}
+

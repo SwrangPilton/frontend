@@ -1,0 +1,36 @@
+.nav-bg {
+    background-image: url('./images/bg-tablet-pattern.svg');
+    background-position: 800px -200px;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bg {
+        background-image: url('./images/bg-tablet-pattern.svg');
+        background-position: 100px 0px;
+        background-repeat: no-repeat;
+        background-size: 300px 400px;
+    }
+    .feature-bg {
+        background-image: url('./images/bg-tablet-pattern.svg');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+    }
+}
+
+.footer1-bg {
+    background-image: url('./images/bg-simplify-section-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-bg {
+    background-image: url('./images/bg-tablet-pattern.svg');
+    background-position: -300px 100px;
+    background-repeat: no-repeat;
+}
+
+/* .bg-black {
+    opacity: 0.8 !important;
+} */

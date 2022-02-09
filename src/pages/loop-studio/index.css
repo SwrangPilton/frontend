@@ -1,0 +1,4 @@
+#loop_studios .body-fixed {
+    height: 100vh !important;
+    overflow-y: hidden !important;
+}

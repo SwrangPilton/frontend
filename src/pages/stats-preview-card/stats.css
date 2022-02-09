@@ -1,0 +1,26 @@
+.stats-body {
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.stats-card {
+    background-color: hsla(244, 38%, 16%, 0.7);
+}
+
+.stats-insights {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats-p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats-bgColor {
+    background-color: hsl(277, 74%, 48%);
+}
+
+.stats-imgCard {
+    background-color: hsl(277, 74%, 48%);
+    opacity: 0.65;
+}

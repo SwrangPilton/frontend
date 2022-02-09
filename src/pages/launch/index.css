@@ -1,0 +1,14 @@
+.bg {
+    color: #fff;
+    background-image:
+        url('./bg-stars.svg'),
+        url('./hills.svg');
+    background-color: hsl(234, 17%, 12%);
+    background-repeat: repeat, no-repeat;
+    background-position: center, bottom;
+    background-size: auto, contain;
+}
+
+.card-bg {
+    background: hsl(235, 25%, 24%);
+}
