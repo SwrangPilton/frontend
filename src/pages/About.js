@@ -20,7 +20,7 @@ export default function About() {
             </div>
             <div className="flex flex-wrap flex-row items-center mb-3">
                 <AiFillGithub className='text-xl lg:text-3xl' />
-                <a href="mailto:swrangpilton@gmail.com" className='underline text-xl lg:text-3xl ml-4 mb-2'><b>Github Account</b></a>
+                <Link to="https://github.com/SwrangPilton" className='underline text-xl lg:text-3xl ml-4 mb-2'><b>Github Account</b></Link>
             </div>
         </div>
     </div>;
