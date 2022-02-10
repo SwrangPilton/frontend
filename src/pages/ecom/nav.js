@@ -1,26 +1,28 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import cart from './images/cart.jpg'
 import avatar from './images/avatar.png'
 
 export default function Nav() {
-    const [navOpen, setNavOpen] = useState(true);
-    const [isScrollable, setIsScrollable] = useState(false)
+    const [navOpen, setNavOpen] = useState(false);
+    const [isScrollable, setIsScrollable] = useState(false);
 
     const toggleNav = () => {
         setNavOpen(!navOpen)
         setIsScrollable(!isScrollable)
     }
-    const closeNav = () => {
+    const closeNav = () => { 
         setNavOpen(false)
+        setIsScrollable(false)
     }
-    // useEffect(() => {
-    //     document.body.classList.toggle('body-fixed', isScrollable);
-    // }, [isScrollable])
+
+    useEffect(() => {
+        document.body.classList.toggle('body-fixed', isScrollable);
+    }, [isScrollable])
 
     return (
         <nav className={`flex flex-wrap px-6 lg:px-16 justify-between items-center py-4 shadow-md`}>
-            <ul className="flex flex-wrap flex-row">
+            <ul className="flex flex-wrap flex-row items-center">
                 <div className="flex flex-wrap flex-row items-center">
                     <AiOutlineMenu className="block lg:hidden text-xl lg:text-3xl mr-3" onClick={toggleNav} />
                     <h1 className="text-lg lg:text-3xl font-bold mr-8">Sneakers</h1>

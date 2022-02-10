@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import product1 from './images/product-1.jpg'
 import product2 from './images/product-2.jpg'
 import product3 from './images/product-3.jpg'
@@ -9,32 +9,19 @@ function App() {
     const [clickImg, setClickImg] = useState(product1)
 
     const [val, setVal] = useState(1)
-    const [quantity, setQuantity] = useState(1)
+
     const [price, setPrice] = useState(150)
 
     const handleIncrease = () => {
         setVal(val + 1);
-        setPrice(val * price)
-        console.log(val)
-        console.log(price)
-        console.log(val * price)
-        // setQuantity(quantity + 1)
-        // handlePrice(quantity)
-    }
-
-    const handlePrice = () => {
-        setPrice(quantity * price)
-        console.log(quantity)
-        console.log(price)
     }
 
     const handleDecrease = () => {
         if (val > 0) {
+            console.log(val)
             setVal(val - 1);
-            setPrice(val * price)
         }
     }
-
 
     return (
         <main>
@@ -57,8 +44,8 @@ function App() {
 
                     <div className="">
                         <div className="flex flex-row items-center">
-                            <h1 className="text-4xl font-bold">${price}</h1>
-                            <h1 className="text-lg ml-4 bg-red-200 p-1 rounded-md">-50%</h1>
+                            <h1 className="text-4xl font-bold">${val === 0 || val === 1 ? price : (val - 1) * price}</h1>
+                            <h1 className="text-md ml-4 bg-red-200 p-2 rounded-full">-50%</h1>
                         </div>
                         <h1 className="text-xl text-gray-500 line-through font-bold">$300.00</h1>
                     </div>
@@ -66,7 +53,7 @@ function App() {
                     <div className="flex flex-wrap flex-row justify-between pt-8 items-center">
                         <div className="w-2/6 mb-3 lg:w-1/2 py-1 flex flex-wrap flex-row justify-around mr-2 rounded-xl bg-gray-200 shadow-md">
                             <button className="text-2xl lg:text-4xl font-bold text-red-500" onClick={handleDecrease}>-</button>
-                            <h1 className="text-xl lg:text-3xl font-bold">{val}</h1>
+                            <h1 className="text-xl lg:text-3xl font-bold">{val > 0 ? val - 1 : 0}</h1>
                             <button className="text-2xl lg:text-4xl font-bold text-red-500" onClick={handleIncrease}>+</button>
                         </div>
                         <button className="w-2/6 mb-3 rounded-xl py-2 bg-blue-600 text-gray-50 text-lg lg:text-2xl filter shadow-xl">Add to cart</button>

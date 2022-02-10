@@ -24,7 +24,7 @@ export default function Index() {
         <section id='loop_studios'>
             {/* //! NAVBAR */}
             <nav className="absolute w-screen xl:h-full text-white" >
-                <div className="py-5 xl:py-10 px-6 xl:px-48">
+                <div className="py-5 xl:py-10 px-6  md:px-12 lg:px-32  xl:px-48">
                     <nav className="flex justify-between items-center">
                         <a href="#!" className="text-3xl font-bold">loopstudios</a>
                         <button className={`z-50 xl:hidden text-2xl`}
@@ -32,7 +32,7 @@ export default function Index() {
                             {navOpen ? <VscChromeClose /> : <VscListFlat />}
                         </button>
                         <div className={`absolute z-40 bg-black w-screen h-screen top-0 left-0 ${navOpen ? 'block' : 'hidden'} `}>
-                            <div className="py-5 xl:py-10 px-6 xl:px-48 flex flex-col">
+                            <div className="py-5 xl:py-10 px-6  md:px-12 lg:px-32  xl:px-48 flex flex-col">
                                 <h1 className="text-3xl font-bold mb-32">loopstudios</h1>
                                 <Link to="#!" onClick={closeNav} className="text-lg pb-2 ">About</Link>
                                 <Link to="#!" onClick={closeNav} className="text-lg pb-2 ">Careers</Link>
@@ -60,7 +60,7 @@ export default function Index() {
 
             <img className="w-screen h-full xl:h-auto" src={hero} alt="" style={{ minHeight: '340px' }} />
 
-            <div className="py-5 xl:py-10 px-6 xl:px-48 grid grid-cols-1 xl:grid-cols-5 items-end">
+            <div className="py-5 xl:py-10 px-6  md:px-12 lg:px-32  xl:px-48 grid grid-cols-1 xl:grid-cols-5 items-end">
                 <div className="col-span-3">
                     <img className="w-screen h-full" src={interactive} alt="" />
                 </div>
@@ -75,7 +75,7 @@ export default function Index() {
                 </div>
             </div>
 
-            <div className="flex justify-center xl:justify-between items-end mt-12 xl:mt-24 mb-0 py-5 xl:py-10 px-6 xl:px-48">
+            <div className="flex justify-center xl:justify-between items-end mt-12 xl:mt-24 mb-0 py-5 xl:py-10 px-6  md:px-12 lg:px-32  xl:px-48">
                 <h1 className="text-3xl xl:text-4xl uppercase">our creations</h1>
                 <button className="hidden xl:block uppercase border-2 border-black
                     py-1 px-4 text-lg hover:bg-black hover:text-white">
@@ -83,7 +83,7 @@ export default function Index() {
             </div>
 
             {/* //! CONTENT   */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8 py-5 xl:pb-10 px-6 xl:px-48">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 xl:gap-8 py-5 xl:pb-10 px-6  md:px-12 lg:px-32  xl:px-48">
                 {data.map((data, index) => {
                     return (
                         <div key={index} index={index} className="relative rounded-sm shadow-md     ">
@@ -98,12 +98,12 @@ export default function Index() {
                 })}
             </div>
 
-            <div className="xl:hidden flex justify-center py-5 xl:py-10 px-6 xl:px-48">
+            <div className="xl:hidden flex justify-center py-5 xl:py-10 px-6  md:px-12 lg:px-32  xl:px-48">
                 <button className="uppercase border-2 border-black py-1 px-4 text-lg">see all</button>
             </div>
 
             {/* //! FOOTER   */}
-            <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 place-content-end items-end py-5 xl:py-10 px-6 xl:px-48 bg-black text-white">
+            <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 place-content-end items-end py-5 xl:py-10 px-6  md:px-12 lg:px-32  xl:px-48 bg-black text-white">
                 <div className="mt-6 mb-4 lg:mb-0">
                     <h1 className="text-4xl font-extrabold text-center lg:text-left mb-10 lg:mb-6">loopstudios</h1>
                     <div className="flex flex-col lg:flex-row text-center justify-between mt-6 font-semibold">

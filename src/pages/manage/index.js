@@ -18,7 +18,7 @@ export default function Index() {
     return (
         <section id={`nav-bg ${!nav} && bg-black`}>
             <nav className='nav-bg'>
-                <nav className='flex flex-wrap flex-row justify-between items-center w-full col-span-2 py-6 mb-6 px-6 lg:px-28 '>
+                <nav className='flex flex-wrap flex-row justify-between items-center w-full col-span-2 py-6 mb-6 px-6 md:px-12 lg:px-28 '>
                     <a href="#!">
                         <img src={logo} className='bg-white' alt="" />
                     </a>
@@ -51,20 +51,20 @@ export default function Index() {
                 </nav>
 
                 {/* //! Head */}
-                <div className="head grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 gap-x-6 px-6 lg:px-28 items-center">
+                <div className="head grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 gap-x-6 px-6 md:px-12 lg:px-28 items-center">
                     <div className='text-center sm:text-left order-2 lg:order-1'>
                         <h1 className='lg:w-4/5 text-4xl lg:text-5xl font-semibold'>Bring everyone together to build better products.</h1>
                         <p className='lg:w-4/5 text-lg my-10 text-gray-500'>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in views.</p>
 
                         <button className='py-2 px-6 rounded-3xl bg-red-400 hover:bg-red-300 text-white text-lg shadow-xl'>Get Started</button>
                     </div>
-                    <img src={intro} className='w-100 order-1 lg:order-2' alt="" />
+                    <img src={intro} className='w-100 mx-auto order-1 lg:order-2' alt="" />
                 </div>
             </nav>
 
             {/* //! Features */}
             <div className="feature-bg ">
-                <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 gap-x-6 px-6 lg:px-28 my-16">
+                <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 gap-x-6 px-6 md:px-12 lg:px-28 my-16">
                     <div className='text-center sm:text-left'>
                         <h1 className='lg:w-4/5 text-4xl lg:text-5xl font-semibold'>What's different about Manage ?</h1>
                         <p className='lg:w-4/5 text-lg my-10 text-gray-500'>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern for modern digital product teams.</p>
@@ -114,7 +114,7 @@ export default function Index() {
                 </div>
 
                 {/* //! Testimonial */}
-                <div className="head grid grid-cols-1 lg:grid-cols-3 gap-y-16 lg:gap-y-0 gap-x-6 px-6 lg:px-28 text-center my-16">
+                <div className="head grid grid-cols-1 lg:grid-cols-3 gap-y-16 lg:gap-y-0 gap-x-6 px-6 md:px-12 lg:px-28 text-center my-16">
                     <div className="col-span-1 lg:col-span-3 text-center mb-0 lg:mb-6 ">
                         <h1 className='text-3xl lg:text-5xl font-semibold lg:mb-12'>What they've said</h1>
                     </div>
@@ -149,7 +149,7 @@ export default function Index() {
             </div>
 
             {/* //! Testimonial */}
-            {/* <div className="head grid grid-cols-1 lg:grid-cols-3 gap-y-16 lg:gap-y-0 gap-x-6 px-6 lg:px-28 text-center my-16">
+            {/* <div className="head grid grid-cols-1 lg:grid-cols-3 gap-y-16 lg:gap-y-0 gap-x-6 px-6 md:px-12 lg:px-28 text-center my-16">
                 <div className="col-span-1 lg:col-span-3 text-center mb-0 lg:mb-6 ">
                     <h1 className='text-3xl lg:text-5xl font-semibold lg:mb-12'>What they've said</h1>
                 </div>
@@ -189,7 +189,7 @@ export default function Index() {
                     <button className='py-2 px-6 rounded-3xl bg-white hover:bg-gray-200 text-red-400 text-lg shadow-xl'>Get Started</button>
                 </div>
 
-                <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 bg-gray-800 text-white px-6 lg:px-32 py-16 duration-500'>
+                <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 bg-gray-800 text-white px-6 md:px-12 lg:px-32 py-16 duration-500'>
                     <div className='flex flex-col justify-between col-span-2 lg:col-auto order-4 lg:order-1'>
                         <img src={logo} className='bg-white w-3/4 lg:w-full mx-auto lg:mb-0 order-2 lg:order-1' alt="" />
                         <div className="flex flex-wrap flex-row justify-between text-4xl cursor-pointer order-1 mb-10 lg:mb-0 lg:order-2">
@@ -214,8 +214,8 @@ export default function Index() {
 
                     <div className='flex flex-wrap flex-col justify-between col-span-2 lg:col-auto order-1 lg:order-4'>
                         <div className='flex flex-wrap flex-row justify-between mb-10 lg:mb-0'>
-                            <input type="email" className='py-2 mr-4 lg:mr-0 px-4 rounded-3xl text-black appearance-none focus:outline-none focus:shadow-outline border focus:border-red-500' placeholder='Update in your inbox...' />
-                            <button className='py-2 px-6 rounded-3xl text-white bg-red-400 hover:bg-red-300 text-lg shadow-xl'>Go</button>
+                            <input type="email" className='w-4/6 py-2 lg:mr-0 px-4 rounded-3xl text-black appearance-none focus:outline-none focus:shadow-outline border focus:border-red-500' placeholder='Update in your inbox...' />
+                            <button className='w-1/4 py-2 px-6 rounded-3xl text-white bg-red-400 hover:bg-red-300 text-lg shadow-xl'>Go</button>
                         </div>
                         <p className='hidden lg:block text-md relative bottom-0 '>Copyright 2021. All Rights Reserved</p>
                     </div>

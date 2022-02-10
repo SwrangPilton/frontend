@@ -29,7 +29,7 @@ export default function Index() {
     return (
         <section id="easy-bank-landing">
             {/* //! NAV  */}
-            <nav className='flex flex-wrap justify-between items-center py-3 px-6 lg:px-32 bg-white shadow-xl relative z-50'>
+            <nav className='flex flex-wrap justify-between items-center py-3 px-6  lg:px-32 bg-white shadow-xl relative z-50'>
                 <img src={logo} className='' alt="" />
 
                 <div className="lg:hidden">
@@ -38,7 +38,7 @@ export default function Index() {
                         <AiOutlineClose className='lg:hidden text-xl text-red-500 font-semibold' onClick={toggleNav} />}
                 </div>
                 {nav && (
-                    <Fragment className=''>
+                    <Fragment>
                         <div className='absolute top-0 left-0 w-screen mt-16 px-6 nav-small'>
                             <div className={`flex lg:hidden flex-col justify-between bg-white text-black px-6 py-4 rounded-xl text-center shadow-xl ${modal ? ' bright-opacity ':''}`}>
                                 <a href="#!" onClick={closeNav} className='text-lg mb-2'>About</a>
@@ -55,17 +55,17 @@ export default function Index() {
                     <a href="#!" className='text-lg xl:mr-4'>Blog</a>
                     <a href="#!" className='text-lg xl:mr-4'>Careers</a>
                 </div>
-                <button className='hidden lg:block bg-red-800 py-2 text-white px-4 rounded-3xl'>Request Invite</button>
+                <button className='hidden lg:block bg-red-800 hover:bg-red-700 py-2 text-white px-4 rounded-3xl'>Request Invite</button>
             </nav>
 
             {/* //! Head  */}
             <div className="head relative grid grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-28 lg:py-32 xl:py-40 text-center lg:text-left head-bg">
-                <div className='order-2 lg:order-1 head_inside px-6 lg:px-32 my-6 lg:my-0'>
+                <div className='order-2 lg:order-1 head_inside px-6  lg:px-32 my-6 lg:my-0'>
                     <h1 className="">Next generation digital banking</h1>
                     <p className="lg:w-5/6">
                         Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing and much more.</p>
 
-                    <button className='bg-red-800 mb-5 py-2 my-4 text-white px-4 rounded-3xl xl:w-1/4'>Request Invite</button>
+                    <button className='bg-red-800 hover:bg-red-700 mb-5 py-2 my-4 text-white px-4 rounded-3xl xl:w-2/5'>Request Invite</button>
                 </div>
 
                 <div className='lg:my-16 lg:absolute -top-48 -right-20 head-bg-small'>
@@ -74,7 +74,7 @@ export default function Index() {
             </div>
 
             {/* //! Features  */}
-            <div className="features grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-12 bg-gray-200 py-20 px-6 lg:px-32 text-center lg:text-left">
+            <div className="features grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-12 bg-gray-200 py-20 px-6  lg:px-32 text-center lg:text-left">
                 <div className="col-span-1 md:col-span-2 xl:col-span-4">
                     <h1 className='text-4xl lg:text-5xl mb-6 text-gray-600'>Why choose  Easybank ?</h1>
                     <p className='text-xl lg:w-1/2 text-gray-500'>We leverage open banking to turn your bank account into your financial hub. Control your finances like never before.</p>
@@ -107,7 +107,7 @@ export default function Index() {
             </div>
 
             {/* //! Articles  */}
-            <div className="articles grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-6 py-20 px-6 lg:px-32 lg:text-left">
+            <div className="articles grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-6 py-20 px-6  lg:px-32 lg:text-left">
                 <div className="col-span-1 md:col-span-2 xl:col-span-4">
                     <h1 className='text-4xl lg:text-5xl mb-6 text-gray-600'>Latest Articles</h1>
                 </div>
@@ -151,16 +151,16 @@ export default function Index() {
             </div>
 
             {/* //! Footer  */}
-            <footer className='py-16 px-6 lg:px-32'>
+            <footer className='py-16 px-6  lg:px-32'>
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-5 text-center lg:text-left">
                     <div className='flex flex-col justify-between cursor-pointer'>
                         <img src={logo} className='bg-white w-3/5 mb-6 lg:mb-0 mx-auto lg:mx-0' alt="" />
-                        <div className='flex flex-wrap flex-row justify-between text-2xl md:w-3/5 mx-auto lg:mx-0'>
-                            <AiFillFacebook className='text-white hover:text-red-400' />
-                            <AiFillInstagram className='text-white hover:text-red-400' />
-                            <AiFillYoutube className='text-white hover:text-red-400' />
-                            <AiFillTwitterCircle className='text-white hover:text-red-400' />
-                            <AiOutlineLinkedin className='text-white hover:text-red-400' />
+                        <div className='flex flex-wrap flex-row justify-between text-2xl md:text-3xl w-full md:w-3/5 mx-auto lg:mx-0'>
+                            <AiFillFacebook className='text-white hover:text-blue-400' />
+                            <AiFillInstagram className='text-white hover:text-pink-500' />
+                            <AiFillYoutube className='text-white hover:text-red-500' />
+                            <AiFillTwitterCircle className='text-white hover:text-blue-500' />
+                            <AiOutlineLinkedin className='text-white hover:text-blue-400' />
                         </div>
                     </div>
 
@@ -177,7 +177,7 @@ export default function Index() {
                     </div>
 
                     <div className='flex flex-col justify-between lg:items-end text-center lg:text-right'>
-                        <button className='bg-red-800 mb-5 py-2 text-white px-4 rounded-3xl w-3/4 mx-auto lg:mx-0'>Request Invite</button>
+                        <button className='bg-red-800 hover:bg-red-700 mb-5 py-2 text-white px-4 rounded-3xl w-3/4 mx-auto lg:mx-0'>Request Invite</button>
                         <p className=''>&copy; Easybank. All Rights Reserved</p>
                     </div>
 
