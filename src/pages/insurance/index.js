@@ -106,13 +106,13 @@ export default function Index() {
         {/* //! FOOTER  */}
         <footer className='px-5 lg:px-48 py-16'>
             <div className='flex flex-col lg:flex-row justify-between items-center '>
-            <img src={logo} className='mb-5 lg:mb-0' alt="" />
+            <img src={logo} className='mb-8 lg:mb-0' alt="" />
             {/* <h1 className='text-3xl font-semibold uppercase mb-5 lg:mb-0'>insure</h1> */}
-                <div className='flex-row text-4xl text-gray-600'>
-                    <a href="#!" className='mr-3 hover:text-black'><AiFillFacebook/> </a>
-                    <a href="#!" className='mr-3 hover:text-black'><AiFillTwitterSquare/> </a>
-                    <a href="#!" className='mr-3 hover:text-black'><AiOutlineInstagram/> </a>
-                    <a href="#!" className='mr-3 hover:text-black'><AiFillYoutube/> </a>
+                <div className='flex flex-wrap flex-row text-4xl text-gray-600'>
+                    <a href="#!" className='mr-3 hover:text-black'><AiFillFacebook className='text-3xl'/> </a>
+                    <a href="#!" className='mr-3 hover:text-black'><AiFillTwitterSquare className='text-3xl'/> </a>
+                    <a href="#!" className='mr-3 hover:text-black'><AiOutlineInstagram className='text-3xl'/> </a>
+                    <a href="#!" className=' hover:text-black'><AiFillYoutube className='text-3xl'/> </a>
                 </div>
             </div>
             <hr className='my-10 border-t-2' />

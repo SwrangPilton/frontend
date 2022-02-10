@@ -192,7 +192,7 @@ export default function Index() {
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 bg-gray-800 text-white px-6 lg:px-32 py-16 duration-500'>
                     <div className='flex flex-col justify-between col-span-2 lg:col-auto order-4 lg:order-1'>
                         <img src={logo} className='bg-white w-3/4 lg:w-full mx-auto lg:mb-0 order-2 lg:order-1' alt="" />
-                        <div className="flex-row justify-between text-4xl cursor-pointer order-1 mb-10 lg:mb-0 lg:order-2">
+                        <div className="flex flex-wrap flex-row justify-between text-4xl cursor-pointer order-1 mb-10 lg:mb-0 lg:order-2">
                             <AiFillFacebook className='hover:text-red-400' />
                             <AiFillInstagram className='hover:text-red-400' />
                             <AiFillYoutube className='hover:text-red-400' />
@@ -212,9 +212,9 @@ export default function Index() {
                         <a href="#!" className='text-lg mb-3 hover:text-red-400'>Privacy Policy</a>
                     </div>
 
-                    <div className='flex flex-col justify-between col-span-2 lg:col-auto order-1 lg:order-4'>
-                        <div className='flex-row justify-between mb-10 lg:mb-0'>
-                            <input type="email" className='py-2 px-4 rounded-3xl text-black appearance-none focus:outline-none focus:shadow-outline border focus:border-red-500' placeholder='Update in your inbox...' />
+                    <div className='flex flex-wrap flex-col justify-between col-span-2 lg:col-auto order-1 lg:order-4'>
+                        <div className='flex flex-wrap flex-row justify-between mb-10 lg:mb-0'>
+                            <input type="email" className='py-2 mr-4 lg:mr-0 px-4 rounded-3xl text-black appearance-none focus:outline-none focus:shadow-outline border focus:border-red-500' placeholder='Update in your inbox...' />
                             <button className='py-2 px-6 rounded-3xl text-white bg-red-400 hover:bg-red-300 text-lg shadow-xl'>Go</button>
                         </div>
                         <p className='hidden lg:block text-md relative bottom-0 '>Copyright 2021. All Rights Reserved</p>

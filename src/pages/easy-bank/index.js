@@ -155,7 +155,7 @@ export default function Index() {
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-5 text-center lg:text-left">
                     <div className='flex flex-col justify-between cursor-pointer'>
                         <img src={logo} className='bg-white w-3/5 mb-6 lg:mb-0 mx-auto lg:mx-0' alt="" />
-                        <div className='flex-row justify-between text-2xl md:w-3/5 mx-auto lg:mx-0'>
+                        <div className='flex flex-wrap flex-row justify-between text-2xl md:w-3/5 mx-auto lg:mx-0'>
                             <AiFillFacebook className='text-white hover:text-red-400' />
                             <AiFillInstagram className='text-white hover:text-red-400' />
                             <AiFillYoutube className='text-white hover:text-red-400' />

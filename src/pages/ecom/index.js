@@ -43,9 +43,7 @@ function App() {
                 <div className="lg:w-2/4 mx-auto p-8 lg:p-0">
                     <img src={clickImg} className="rounded-xl " alt="" />
                     <div className="flex flex-wrap flex-row justify-between mt-4">
-                        <img src={product1}
-                            onClick={() => setClickImg(product1)}
-                            className="w-20 mb-3 rounded-xl cursor-pointer" alt="" />
+                        <img src={product1} onClick={() => setClickImg(product1)} className="w-20 mb-3 rounded-xl cursor-pointer" alt="" />
                         <img src={product2} onClick={() => setClickImg(product2)} className="w-20 mb-3 rounded-xl cursor-pointer" alt="" />
                         <img src={product3} onClick={() => setClickImg(product3)} className="w-20 mb-3 rounded-xl cursor-pointer" alt="" />
                         <img src={product4} onClick={() => setClickImg(product4)} className="w-20 mb-3 rounded-xl cursor-pointer" alt="" />
@@ -65,7 +63,7 @@ function App() {
                         <h1 className="text-xl text-gray-500 line-through font-bold">$300.00</h1>
                     </div>
 
-                    <div className="flex flex-wrap justify-between pt-8 items-center">
+                    <div className="flex flex-wrap flex-row justify-between pt-8 items-center">
                         <div className="w-2/6 mb-3 lg:w-1/2 py-1 flex flex-wrap flex-row justify-around mr-2 rounded-xl bg-gray-200 shadow-md">
                             <button className="text-2xl lg:text-4xl font-bold text-red-500" onClick={handleDecrease}>-</button>
                             <h1 className="text-xl lg:text-3xl font-bold">{val}</h1>

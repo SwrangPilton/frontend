@@ -20,10 +20,10 @@ export default function Nav() {
 
     return (
         <nav className={`flex flex-wrap px-6 lg:px-16 justify-between items-center py-4 shadow-md`}>
-            <ul className="flex flex-wrap flex-row items-center ">
-                <div className="flex flex-wrap flex-row items-end">
+            <ul className="flex flex-wrap flex-row">
+                <div className="flex flex-wrap flex-row items-center">
                     <AiOutlineMenu className="block lg:hidden text-xl lg:text-3xl mr-3" onClick={toggleNav} />
-                    <h1 className="text-xl lg:text-3xl font-bold mr-8">sneakers</h1>
+                    <h1 className="text-lg lg:text-3xl font-bold mr-8">Sneakers</h1>
                 </div>
                 <div className={`hidden lg:block ${navOpen ? ' block ' : ' hidden '}`}>
                     <a href="#!" className="mr-4 hover:text-red-500" onClick={closeNav}>Collections</a>

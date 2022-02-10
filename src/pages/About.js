@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 
 export default function About() {
     return <div>
@@ -9,12 +10,17 @@ export default function About() {
         </nav>
         <div className="flex flex-wrap flex-col justify-center my-10 px-4 xl:px-40">
             <div className="">
-                <h1 className='text-4xl'>Hello there, I'm <span className='text-red-500'>Pilton Swrang</span> </h1>
-                <p className='text-xl'>I like developing frontend 2D websites</p>
+                <h1 className='text-3xl'>Hello there, <br /> I'm <span className='text-red-500 text-4xl lg:text-6xl'>Pilton Swrang</span> </h1>
+                <p className='text-xl my-3'>I like developing frontend 2D websites</p>
             </div>
-            <div className="flex-row my-4">
-                <h1 className='text-xl'>Contact me at  <a href="mailto:swrangpilton@gmail.com" className='underline'><b>swrangpilton@gmail.com</b></a></h1>
-                {/* <button className='bg-blue-500 text-white text-3xl py-2 px-5 rounded-lg'>Hire Me</button> */}
+            <h1 className='text-xl my-3'>Contact me at </h1>
+            <div className="flex flex-wrap flex-row items-center mb-3">
+                <AiOutlineMail className='text-xl lg:text-3xl' />
+                <a href="mailto:swrangpilton@gmail.com" className='underline text-xl lg:text-3xl ml-4 mb-2'><b>swrangpilton@gmail.com</b></a>
+            </div>
+            <div className="flex flex-wrap flex-row items-center mb-3">
+                <AiFillGithub className='text-xl lg:text-3xl' />
+                <a href="mailto:swrangpilton@gmail.com" className='underline text-xl lg:text-3xl ml-4 mb-2'><b>Github Account</b></a>
             </div>
         </div>
     </div>;
