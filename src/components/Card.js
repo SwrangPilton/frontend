@@ -2,7 +2,8 @@ import '../stats.css'
 import { Link } from "react-router-dom";
 
 function Card({ data }) {
-    const { title, html, css, js, level, levelName, text, imgURI, location } = data
+    const { title, html, css, js, api, level, levelName, text, imgURI, location } = data
+    console.log(data)
 
     const clc = (level) => {
         // getColorLevelClass
@@ -49,9 +50,10 @@ function Card({ data }) {
 
                         <div className="flex flex-wrap flex-row justify-between my-4">
                             <div className="flex flex-wrap flex-row">
-                                <h1 className="mr-2 text-md xl:text-lg font-bold html">{html}</h1>
-                                <h1 className="mr-2 text-md xl:text-lg font-bold css">{css}</h1>
-                                <h1 className="mr-2 text-md xl:text-lg font-bold js">{js}</h1>
+                                <h1 className="mr-2 text-md font-bold html">{html}</h1>
+                                <h1 className="mr-2 text-md font-bold css">{css}</h1>
+                                <h1 className="mr-2 text-md font-bold js">{js}</h1>
+                                <h1 className="mr-2 text-md font-bold api">{api}</h1>
                             </div>
                             {renderLevel(level, levelName)}
                         </div>

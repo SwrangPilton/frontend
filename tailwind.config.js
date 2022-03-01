@@ -1,7 +1,8 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false,
-  theme: {
+  // darkMode: false,
+  darkMode: 'class',
+    theme: {
     extend: {},
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

@@ -10,7 +10,7 @@ function App() {
 
     const [val, setVal] = useState(1)
 
-    const [price, setPrice] = useState(150)
+    const [price] = useState(150)
 
     const handleIncrease = () => {
         setVal(val + 1);

@@ -195,5 +195,18 @@ export const data = [
         "imgURI": "/images/easy-bank/easybank.jpg",
         "location": "/easy-bank"
     },
+    {
+        "id": 18,
+        "title": "REST Countries API with color theme switcher",
+        "html": "HTML",
+        "css": "CSS",
+        "js": "JS", 
+        "api": "API",
+        "level": 4,
+        "levelName": "ADVANCED",
+        "text": "If you're wanting to test your JavaScript skills this is the challenge for you. Use whichever JS framework you prefer and pull data from the REST Countries API.",
+        "imgURI": "/images/countries/index.jpg",
+        "location": "/rest-countries"
+    },
     
 ]

@@ -21,6 +21,8 @@ import ClipboardLanding from './pages/clipboard-landing/index'
 import Launch from './pages/launch/index'
 import ManageLanding from './pages/manage/index'
 import About from "./pages/About";
+import Countries from "./pages/countries";
+import Country from "./pages/countries/country";
 
 export default function App() {
   return (
@@ -46,6 +48,8 @@ export default function App() {
         <Route exact path="/launch" component={Launch} />
         <Route exact path="/manage-landing" component={ManageLanding} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/rest-countries" component={Countries} />
+        <Route exact path="/rest-countries/country/:name" component={Country} />
         <Route path="*" component={Error} />
       </Switch>
     </Router>
