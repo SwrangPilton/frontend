@@ -31,7 +31,7 @@ export default function Nav() {
     }
     return (
         <nav className='flex flex-wrap justify-between items-center px-4 md:px-10 lg:px-20 py-4 shadow-lg font-semibold  dark:bg-gray-600'>
-            <Link to="/rest-countries">
+            <Link to="/rest-countries" className="mb-2 md:mb-0">
                 <h1 className='text-2xl dark:text-gray-50'>Where in the world ?</h1>
             </Link>
             <RenderButton />

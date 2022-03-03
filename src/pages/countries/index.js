@@ -50,13 +50,13 @@ export default function Countries() {
         <div className={`bg-gray-100 dark:bg-gray-600 ${callCountry ? ' h-screen' : ''} `}>
             <Nav />
             <main className='flex flex-wrap justify-between items-center px-4 md:px-10 lg:px-20 py-8'>
-                <input type="text" className='p-2 px-4 lg:w-1/4 appearance-none focus:outline-none focus:shadow-outline bg-white dark:bg-gray-400 dark:text-white rounded-md border shadow'
+                <input type="text" className='p-2 px-4 lg:w-1/4 mb-2 md:mb-0 appearance-none focus:outline-none focus:shadow-outline bg-white dark:bg-gray-400 dark:text-white rounded-md border shadow'
                     onChange={e => {
                         nameSet(e.target.value)
                         callCountrySet(true)
                     }}
                     placeholder='Search for a country...' />
-                <select className='p-2 px-4 appearance-none focus:outline-none focus:shadow-outline bg-white dark:bg-gray-400 dark:text-white rounded-md border shadow' value={region} 
+                <select className=' p-2 px-4 appearance-none focus:outline-none focus:shadow-outline bg-white dark:bg-gray-400 dark:text-white rounded-md border shadow' value={region} 
                 onChange={handleChange}>
                     <option value="oceania">Oceania</option>
                     <option value="asia">Asia</option>
@@ -77,7 +77,7 @@ export default function Countries() {
                     return <div key={idx} className="bg-white shadow flex flex-wrap flex-col rounded-xl">
                         <Link to={`/rest-countries/country/${cn.name.common}`}>
                             <img src={cn.flags.png} className="w-full h-60 rounded-t-lg" alt="flag" />
-                            <div className='px-10 w-full py-5 dark:bg-gray-500'>
+                            <div className='px-4 lg:px-10 w-full py-5 dark:bg-gray-500'>
                                 <h1 className='text-2xl font-bold text-gray-700 dark:text-gray-50 mb-4'>{cn.name.common}</h1>
                                 <p className='text-lg font-semibold text-gray-700 dark:text-gray-50 my-2'>Population : {cn.population}</p>
                                 <p className='text-lg font-semibold text-gray-700 dark:text-gray-50 my-2'>Region : {cn.region}</p>

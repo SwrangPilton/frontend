@@ -1,15 +1,12 @@
 import React from 'react'
 import Card from '../components/Card'
 import { data } from '../data'
-import { Link } from 'react-router-dom'
+import Nav from './Nav'
 
 export default function Home() {
     return (
         <>
-            <nav className="shadow-xl fixed w-screen z-10 bg-white flex items-center justify-between px-4 xl:px-40">
-                <Link to="/" className="text-xl md:text-2xl py-3 capitalize font-semibold">Frontend Mentor Solutions</Link>
-                <Link to="/about" className="text-2xl tracking-tighter hover:text-red-500 duration-500">Pilton</Link>
-            </nav>
+            <Nav />
 
             {/* // BODY  */}
             <div className="relative pt-12">
