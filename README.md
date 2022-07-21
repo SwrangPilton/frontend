@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# FRONTEND-MENTOR SOLUTIONS ⭐⭐⭐
 
+This project aims to help the developers to enhance their frontend skills.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
