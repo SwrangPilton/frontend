@@ -2,44 +2,38 @@
 
 <img src="https://github.com/SwrangPilton/Project-Assets/blob/main/assets/frontend/frontend.png" height="600" alt="Frontend Mentor Wall Pic" />
 
----
-
-### Table of Contents
-You're sections headers will be used to reference location of destination.
-
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
-
----
-
 ## Description
 
-This repo was created in order to enhance front-end skills as well as help other developers to like me to grow and learn more. 
-Any critics are welcome.
+This repo was created in order to enhance front-end skills as well as help other developers to like me to grow and learn more. Any criticisms are welcome.
+
+Link : [Frontend Mentor Solutions](https://swrangpilton.github.io/frontend)
+
+#### Solved Challenges 
+- E-Commerce Product Page
+- Order Summary Component
+- Loopstudios Landing Page
+- Profile Card Component
+- Stats Preview Card
+- Grid Testimonial
+- Room Homepage
+- Price Component
+- Insure Landing Page
+- Clipboard Landing Page
+- Launch Countdown Timer
+- Manage Landing Page
+- Easybank Landing Page
+- REST Countries API With Color Theme Switcher
 
 #### Technologies
 
 - ReactJs
 - TailwinCSS
 
-[Back To The Top](#read-me-template)
-
----
-
-## How To Use
-
-#### Installation
-
-
-[Back To The Top](#read-me-template)
-
 ---
 
 ## References
-[Back To The Top](#read-me-template)
+
+[Frontend Mentor](https://www.frontendmentor.io/challenges) : Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
 
 ---
 
@@ -67,8 +61,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](# Frontend Mentor Solutions)
-
 ---
 
 ## Author Info
@@ -76,7 +68,7 @@ SOFTWARE.
 - Twitter - [@SwrangPilton](https://twitter.com/SwrangPilton)
 - LinkedIn - [Pilton Swrang](https://www.linkedin.com/in/pilton-swrang-brahma-89196115a/)
 
-[Back To The Top](#Frontend Mentor Solutions)
+[Back To The Top](# Frontend Mentor Solutions)
 
 
 
