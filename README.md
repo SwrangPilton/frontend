@@ -1,6 +1,6 @@
 # Frontend Mentor Solutions
 
-<img src="https://github.com/SwrangPilton/Project-Assets/blob/main/assets/frontend/frontend.png" height="400" alt="Frontend Mentor Wall Pic" />
+<img src="https://github.com/SwrangPilton/Project-Assets/blob/main/assets/frontend/frontend.png" height="350" alt="Frontend Mentor Wall Pic" />
 
 ## Description
 
