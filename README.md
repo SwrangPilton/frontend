@@ -68,7 +68,6 @@ SOFTWARE.
 - Twitter - [@SwrangPilton](https://twitter.com/SwrangPilton)
 - LinkedIn - [Pilton Swrang](https://www.linkedin.com/in/pilton-swrang-brahma-89196115a/)
 
-[Back To The Top](# Frontend Mentor Solutions)
 
 
 
